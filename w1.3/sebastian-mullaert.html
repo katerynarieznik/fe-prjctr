@@ -9,7 +9,8 @@
 </head>
 
 <body>
-    <!-- Hero section with navigation (image will be a background) -->
+    <!-- Hero section with navigation (image will be a background)
+    ** did not know whether I should include the <header> tag -->
     <section>
         <nav>
             <ul>
@@ -25,6 +26,7 @@
             <p>The simplicity of being</p>
             <h1>sebastian mullaert</h1>
             <p>(biography)</p>
+            <!--  probably this text could be a part of the background image -->
             <p>sebastian mullaert sebastian mullaert sebastian mullaert sebastian mullaert sebastian mullaert sebastian
                 mullaert sebastian mullaert sebastian mullaert sebastian mullaert sebastian mullaert sebastian mullaert
             </p>
@@ -32,12 +34,14 @@
         </section>
     </section>
 
-    <!-- Content sections + aside elements -->
+    <!-- Content sections + aside elements
+    ** I am not sure how these side elements should behave. I would ask designer about this before implementing. But for now I decided to put them into aside even though I assume they do not belong to the <aside> semantically. Maybe simple div would have been better :overthinking-emoji:  -->
     <section>
         <aside>
             <p><span>|</span> Scroll</p>
         </aside>
 
+        <!-- 1. About section -->
         <article>
             <p>Audio-visual performancer</p>
             <p>(about)</p>
@@ -51,6 +55,7 @@
             <p>Utterly unique</p>
         </article>
 
+        <!-- 2. Philosophy section where two images overlapping on the right side-->
         <article>
             <p>(Philosophy)</p>
             <h2>Convergence of Zen meditation, nature & creativity</h2>
@@ -63,6 +68,7 @@
             <p>Based on nature breath</p>
         </article>
 
+        <!-- 3. First quote with an img -->
         <aside>
             <p><span>|</span>The present moment</p>
         </aside>
@@ -80,6 +86,8 @@
             <p>And that’s creativity</p>
         </article>
 
+        <!-- 4. Improvisation section with an img above and black background for the text
+        ** I will probably cut the image as it in the design -->
         <aside>
             <p><span>|</span>Improvisation</p>
         </aside>
@@ -100,6 +108,9 @@
                 <p><span>|</span>Improvisation</p>
             </aside>
         </article>
+
+        <!-- 5. Inspiration section with 3 images in the row
+        ** I am not sure about putting each image into a separate div but two of them are kind of connected with other elements (<p> and <button>). So I decided to to put them into separate <div>s   -->
         <article>
             <p>(Inspiration)</p>
             <h2> Creativity & life
@@ -119,6 +130,38 @@
                 <p>Atmosphere and euphoria</p>
             </section>
         </article>
+
+        <!-- 6. Second quote without an img but with a text to the side -->
+        <article>
+            <p><span>“</span><span>(To the present)</span> To move to music connects you
+                to the moment /
+                What’s important — what’s meaningful
+                in life. <span>People return to themselves</span> *</p>
+            <p>You are just letting expression take place</p>
+        </article>
+
+        <!-- 7. Discography section with a player
+        ** I assumed that is a playable audio track but I do not understand how user should interact with it. It is question for a designer -->
+        <article>
+            <p>(discography)</p>
+            <h2>Musical recording</h2>
+            <p>Really feel this present moment</p>
+            <p>The transformation in the natural world is forms
+                the emotional core of Natthall, a project that’s
+                so much more than a more album.</p>
+            <section>
+                <!-- Here will be a background image -->
+                <div>
+                    <h3><span>01 \</span>Natthal</h3>
+                    <p>Bridge the gap between electronic and modern classical music.</p>
+                </div>
+                <figure>
+                    <figcaption>Views of Natthall</figcaption>
+                    <audio controls src=""></audio>
+                </figure>
+            </section>
+        </article>
+
     </section>
     <footer>
 
