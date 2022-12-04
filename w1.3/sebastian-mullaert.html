@@ -26,7 +26,7 @@
             <p>The simplicity of being</p>
             <h1>sebastian mullaert</h1>
             <p>(biography)</p>
-            <!--  probably this text could be a part of the background image -->
+            <!--  Probably this text could be a part of the background image. Designer showed this trick in the additional video on figma -->
             <p>sebastian mullaert sebastian mullaert sebastian mullaert sebastian mullaert sebastian mullaert sebastian
                 mullaert sebastian mullaert sebastian mullaert sebastian mullaert sebastian mullaert sebastian mullaert
             </p>
@@ -145,8 +145,9 @@
                 the emotional core of Natthall, a project that’s
                 so much more than a more album.</p>
             <section>
+                <!-- Probably the album cover image could be exported together with the text but for now I put it separately -->
                 <div style="background-image: url('src/album-cover.jpg');">
-                    <h3><span>01 \</span>Natthal</h3>
+                    <p><span>01 \</span>Natthal</p>
                     <p>Bridge the gap between electronic and modern classical music.</p>
                 </div>
                 <figure>
@@ -158,6 +159,7 @@
 
         <!-- 8. Upcoming events section -->
         <section>
+            <!-- Is this line a mistake? It was the same in a previous section -->
             <p>Really feel this present moment</p>
             <h2><span>(Soon)</span> Upcoming events and concerts</h2>
             <article>
@@ -195,7 +197,7 @@
         </section>
 
         <!-- 10. Form section
-        ** Added just a couple of fields because did not want to spend time to learn <form> an this point -->
+        ** Added just a couple of fields because did not want to spend time to learn <form> at this point -->
         <h2><span>(Booking)</span> Send an email</h2>
         <p>If you have a general or project enquiry, please drop me an email — available now</p>
         <form>
@@ -207,14 +209,58 @@
                 <label>Name</label>
                 <input type="text" placeholder="Your name" required>
             </div>
-            <div class="form-example">
+            <div>
                 <input type="submit" value=" — Send">
             </div>
         </form>
-
     </section>
-    <footer>
 
+    <!-- 11. Footer section -->
+    <footer>
+        <section>
+            <div>
+                <h3>About  us</h3>
+                <ul>
+                    <li><a href="">Just about</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Recordings</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Activity</h3>
+                <ul>
+                    <li><a href="">Education</a></li>
+                    <li><a href="">Tour dates</a></li>
+                    <li><a href="">Concerts</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="">@circle.of.life</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="">Terms & condition</a></li>
+                    <li><a href="">Privacy policy</a></li>
+                    <li><a href="">Web accessibility</a></li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h3>Joing our mailing list</h3>
+            <p>Sign up to receive an exclusive live recording from Movement Festival as well as private access to discounted tickets for future shows, free track downloads and more.</p>
+            <form>
+                <div>
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div>
+                    <input type="submit" value=" — Send">
+                </div>
+            </form>
+        </section>
     </footer>
 </body>
 
