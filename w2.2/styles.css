@@ -1,0 +1,93 @@
+body {
+  font-family: 'Montserrat';
+  letter-spacing: 0.06rem;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav {
+  padding-top: 40px;
+  padding-right: 60px;
+  padding-left: 67px;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item {
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: capitalize;
+  margin: 0 20px;
+  position: relative;
+}
+
+.menu-item:first-child {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.menu-item:last-child {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.menu-item:hover:after {
+  content: "|";
+  font-family: 'Quattrocento';
+  font-size: 6rem;
+  position: absolute;
+  rotate: 90deg;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: -20px;
+  text-align: center;
+}
+
+.intro {
+  color: rgba(255, 255, 255, 0.9);
+  background-image: url('src/intro-background.jpg');
+  height: 805px;
+}
+
+.intro-content {
+  margin-top: 117px;
+}
+
+.main-heading {
+  font-family: 'Quattrocento';
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  text-transform: capitalize;
+}
+
+.above-heading-text {
+  margin-left: 135px;
+}
+
+.below-heading-text {
+  margin-left: 740px;
+}
+
+.portrait-photo {
+  display: block;
+  margin: -255px auto 0 auto;
+}
