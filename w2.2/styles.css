@@ -45,10 +45,17 @@ nav {
   margin-left: auto;
 }
 
-.menu-item:hover::after {
+.menu-link {
+  position: relative;
+}
+
+.menu-link:hover:after {
   content: "";
-  display: block;
-  height: 5px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 6px;
   background-image: url(src/underline.svg);
   background-size: cover;
   margin-top: 10px;
