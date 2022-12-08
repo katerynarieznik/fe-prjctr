@@ -33,7 +33,6 @@ nav {
   color: rgba(255, 255, 255, 0.8);
   text-transform: capitalize;
   margin: 0 20px;
-  position: relative;
 }
 
 .menu-item:first-child {
@@ -46,18 +45,13 @@ nav {
   margin-left: auto;
 }
 
-.menu-item:hover:after {
-  content: "|";
-  font-family: 'Quattrocento';
-  font-size: 6rem;
-  position: absolute;
-  rotate: 90deg;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  top: -20px;
-  text-align: center;
+.menu-item:hover::after {
+  content: "";
+  display: block;
+  height: 5px;
+  background-image: url(src/underline.svg);
+  background-size: cover;
+  margin-top: 10px;
 }
 
 .intro {
