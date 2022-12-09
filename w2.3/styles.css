@@ -1,0 +1,40 @@
+body {
+  font-family: Tomorrow, sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+.header-logo {
+  display: inline-block;
+  margin-left: 4%;
+  margin-top: 48px;
+  margin-bottom: 38px;
+}
+
+.search {
+  display: inline;
+  text-align: center;
+}
+
+nav {
+  display: inline;
+}
+
+.nav {
+  float: right;
+  margin: 50px 0 40px 0;
+}
+
+.nav li {
+  display: inline;
+}
