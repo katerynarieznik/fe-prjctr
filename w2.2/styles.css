@@ -1,5 +1,6 @@
 body {
   font-family: 'Montserrat';
+  font-size: 16px;
   letter-spacing: 0.06rem;
   margin: 0;
 }
@@ -81,11 +82,11 @@ nav {
 }
 
 .above-heading-text {
-  margin-left: 135px;
+  margin-left: 10%;
 }
 
 .below-heading-text {
-  margin-left: 740px;
+  margin-left: 50%;
 }
 
 .portrait-photo {
