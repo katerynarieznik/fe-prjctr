@@ -92,7 +92,7 @@ h2 {
   margin-bottom: 13%;
 }
 
-.float-left {
+.section-two-img {
   margin-right: 32px;
   float: left;
 }
@@ -106,4 +106,21 @@ h2 {
 .section-three-heading {
   letter-spacing: 0.14rem;
   padding: 17% 7%;
+}
+
+.section-four-img {
+  margin-right: 11%;
+  float: left;
+  margin-bottom: 10%;
+}
+
+.section-four-heading {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 160%;
 }
