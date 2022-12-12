@@ -16,7 +16,6 @@ a {
 
 .header-logo {
   display: inline-block;
-  margin-left: 4%;
   margin-top: 48px;
   margin-bottom: 38px;
 }
@@ -41,7 +40,7 @@ nav,
 
 .search {
   position: relative;
-  top: 4px;
+  top: 6px;
 }
 
 .list-item {
@@ -52,4 +51,25 @@ nav,
   position: relative;
   top: 4px;
   margin-left: 10px;
+}
+
+.intro {
+  background-image: url(images/intro-bgr.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-heading {
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 140%;
+  letter-spacing: 0.105rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 38px;
+}
+
+.intro-img {
+  display: block;
+  margin: 0 auto;
 }
