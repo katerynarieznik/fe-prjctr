@@ -21,20 +21,35 @@ a {
   margin-bottom: 38px;
 }
 
+nav,
+.nav,
 .search {
   display: inline;
-  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
-nav {
+.nav li,
+.search li {
   display: inline;
 }
 
-.nav {
+.right-side-header {
   float: right;
   margin: 50px 0 40px 0;
 }
 
-.nav li {
-  display: inline;
+.search {
+  position: relative;
+  top: 4px;
+}
+
+.list-item {
+  margin-left: 20px;
+}
+
+.shopping-bag-icon {
+  position: relative;
+  top: 4px;
+  margin-left: 10px;
 }
