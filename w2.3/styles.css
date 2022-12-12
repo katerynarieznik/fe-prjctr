@@ -1,5 +1,5 @@
 body {
-  font-family: Tomorrow, sans-serif;
+  font-family: Sintony, sans-serif;
   font-size: 16px;
   color: #000;
 }
@@ -44,6 +44,7 @@ nav,
 }
 
 .list-item {
+  font-family: Tomorrow;
   margin-left: 20px;
 }
 
@@ -60,6 +61,7 @@ nav,
 }
 
 .main-heading {
+  font-family: Tomorrow;
   font-weight: 400;
   font-size: 3.5rem;
   line-height: 140%;
@@ -72,4 +74,20 @@ nav,
 .intro-img {
   display: block;
   margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 140%;
+  margin: 0;
+}
+
+.heading-second {
+  margin-top: 158px;
+}
+
+.float-left {
+  margin-right: 32px;
+  float: left;
 }
