@@ -124,3 +124,31 @@ p {
   font-weight: 400;
   line-height: 160%;
 }
+
+.section-five {
+  background-image: url(images/the-process-section-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  clear: left;
+}
+
+.container-section-five {
+  width: 1030px;
+  margin: 0 auto;
+  padding-top: 22%;
+}
+
+.the-process {
+  border-top: 3px solid #484C32;
+  position: relative;
+}
+
+.the-process-heading {
+  margin-left: 10%;
+}
+
+.the-process-img {
+  position: absolute;
+  right: -30px;
+  top: -221px;
+}
