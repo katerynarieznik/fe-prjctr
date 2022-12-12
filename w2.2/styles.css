@@ -1,0 +1,103 @@
+body {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  letter-spacing: 0.06rem;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav {
+  padding-top: 40px;
+  padding-right: 60px;
+  padding-left: 67px;
+}
+
+.main {
+  position: absolute;
+  width: 100%;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item {
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: capitalize;
+  margin: 0 20px;
+}
+
+.menu-item:first-child {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.menu-item:last-child {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.menu-link {
+  position: relative;
+}
+
+.menu-link:hover:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-image: url(src/underline.svg);
+  background-size: cover;
+  margin-top: 10px;
+}
+
+.intro {
+  color: rgba(255, 255, 255, 0.9);
+  background-image: url('src/intro-background.jpg');
+  height: 805px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  padding-top: 80px;
+}
+
+.intro-content {
+  margin: 117px auto 0;
+  width: 1200px;
+}
+
+.main-heading {
+  font-family: 'Quattrocento';
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  text-transform: capitalize;
+}
+
+.below-heading-text {
+  margin-left: 50%;
+}
+
+.portrait-photo {
+  display: block;
+  margin-top: 130px;
+  margin-left: auto;
+  margin-right: auto;
+}
