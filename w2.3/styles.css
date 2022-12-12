@@ -55,18 +55,22 @@ nav,
 }
 
 .intro {
-  background-image: url(images/intro-bgr.jpg);
+  background-image: url(images/intro-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.main-heading {
+h1 {
   font-family: Tomorrow;
   font-weight: 400;
   font-size: 3.5rem;
   line-height: 140%;
-  letter-spacing: 0.105rem;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.main-heading {
+  letter-spacing: 0.105rem;
   margin: 0;
   padding-top: 38px;
 }
@@ -84,10 +88,22 @@ h2 {
 }
 
 .heading-second {
-  margin-top: 158px;
+  margin-top: 13%;
+  margin-bottom: 13%;
 }
 
 .float-left {
   margin-right: 32px;
   float: left;
+}
+
+.section-three {
+  background-image: url(images/section-three-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-three-heading {
+  letter-spacing: 0.14rem;
+  padding: 17% 7%;
 }
