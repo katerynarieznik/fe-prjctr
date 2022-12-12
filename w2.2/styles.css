@@ -25,6 +25,11 @@ nav {
   padding-left: 67px;
 }
 
+.main {
+  position: absolute;
+  width: 100%;
+}
+
 .menu-list {
   display: flex;
   justify-content: center;
@@ -66,10 +71,15 @@ nav {
   color: rgba(255, 255, 255, 0.9);
   background-image: url('src/intro-background.jpg');
   height: 805px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  padding-top: 80px;
 }
 
 .intro-content {
-  margin-top: 117px;
+  margin: 117px auto 0;
+  width: 1200px;
 }
 
 .main-heading {
@@ -81,15 +91,13 @@ nav {
   text-transform: capitalize;
 }
 
-.above-heading-text {
-  margin-left: 10%;
-}
-
 .below-heading-text {
   margin-left: 50%;
 }
 
 .portrait-photo {
   display: block;
-  margin: -255px auto 0 auto;
+  margin-top: 130px;
+  margin-left: auto;
+  margin-right: auto;
 }
