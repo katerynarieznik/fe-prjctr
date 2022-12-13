@@ -9,18 +9,25 @@ a {
   text-decoration: none;
 }
 
-.container {
+.container-wide {
   width: 1240px;
   margin: 0 auto;
 }
 
-.header-logo {
-  display: inline-block;
-  margin-top: 48px;
-  margin-bottom: 38px;
+.container-narrow {
+  width: 1030px;
+  margin: 0 auto;
 }
 
-nav,
+.header {
+  height: 24px;
+  padding: 48px 0 38px 0;
+}
+
+nav {
+  margin-right: 35px;
+}
+
 .nav,
 .search {
   display: inline;
@@ -28,30 +35,35 @@ nav,
   padding: 0;
 }
 
-.nav li,
-.search li {
+.nav li {
   display: inline;
 }
 
-.right-side-header {
+.right-side-menu {
   float: right;
-  margin: 50px 0 40px 0;
+  position: relative;
 }
 
 .search {
-  position: relative;
-  top: 6px;
+  border: none;
+  background: none;
+  position: absolute;
+  top: 2px;
+  left: -20px;
 }
 
 .list-item {
   font-family: Tomorrow;
+  font-size: 1.3rem;
+  line-height: 130%;
+  letter-spacing: 0.14rem;
   margin-left: 20px;
 }
 
 .shopping-bag-icon {
-  position: relative;
-  top: 4px;
-  margin-left: 10px;
+  position: absolute;
+  top: 0;
+  right: 5px;
 }
 
 .intro {
@@ -80,6 +92,11 @@ h1 {
   margin: 0 auto;
 }
 
+.section-two-img {
+  margin-right: 32px;
+  float: left;
+}
+
 h2 {
   font-size: 2.5rem;
   font-weight: 400;
@@ -87,14 +104,9 @@ h2 {
   margin: 0;
 }
 
-.heading-second {
+.heading-section-two {
   margin-top: 13%;
   margin-bottom: 13%;
-}
-
-.section-two-img {
-  margin-right: 32px;
-  float: left;
 }
 
 .section-three {
@@ -105,12 +117,12 @@ h2 {
 
 .section-three-heading {
   letter-spacing: 0.14rem;
-  padding: 17% 7%;
+  padding: 17% 0;
 }
 
 .section-four-img {
-  margin-right: 11%;
   float: left;
+  margin-right: 11%;
   margin-bottom: 10%;
 }
 
@@ -129,64 +141,57 @@ p {
   background-image: url(images/the-process-section-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 22% 0;
   clear: left;
 }
 
-.container-section-five {
-  width: 1030px;
-  margin: 0 auto;
-  padding-top: 22%;
-  padding-bottom: 23%;
-}
-
-.the-process {
+.model-one {
   border-top: 3px solid #484C32;
   position: relative;
 }
 
-.the-process-heading {
+.model-one-heading {
   margin-left: 10%;
 }
 
-.the-process-img {
+.model-one-img {
   position: absolute;
   top: -221px;
   right: 0;
 }
 
-.subheading {
+.model-one-text {
+  margin: 76px 0 32px;
   width: 50%;
 }
 
-.the-process-text {
-  margin: 76px 0 32px;
-}
-
-.material {
+.model-two {
   border-top: 3px solid #484C32;
   position: relative;
 }
 
-.material-text {
+.model-two-text {
   margin-bottom: 42px;
+  width: 50%;
 }
 
-.material-img {
+.model-two-img {
   position: absolute;
   right: 0;
   top: -207px;
 }
 
-.local {
+.model-three {
   border-bottom: 3px solid #484C32;
   position: relative;
 }
 
-.local-text {
+.model-three-text {
   margin-bottom: 24px;
+  width: 50%;
 }
 
-.local-img {
+.model-three-img {
   position: absolute;
   right: 0;
   top: 6px;
