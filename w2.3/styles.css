@@ -136,6 +136,7 @@ p {
   width: 1030px;
   margin: 0 auto;
   padding-top: 22%;
+  padding-bottom: 23%;
 }
 
 .the-process {
@@ -149,6 +150,44 @@ p {
 
 .the-process-img {
   position: absolute;
-  right: -30px;
   top: -221px;
+  right: 0;
+}
+
+.subheading {
+  width: 50%;
+}
+
+.the-process-text {
+  margin: 76px 0 32px;
+}
+
+.material {
+  border-top: 3px solid #484C32;
+  position: relative;
+}
+
+.material-text {
+  margin-bottom: 42px;
+}
+
+.material-img {
+  position: absolute;
+  right: 0;
+  top: -207px;
+}
+
+.local {
+  border-bottom: 3px solid #484C32;
+  position: relative;
+}
+
+.local-text {
+  margin-bottom: 24px;
+}
+
+.local-img {
+  position: absolute;
+  right: 0;
+  top: 6px;
 }
