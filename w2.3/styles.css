@@ -116,6 +116,7 @@ h2 {
 }
 
 .section-three-heading {
+  color: #fff;
   letter-spacing: 0.14rem;
   padding: 17% 0;
 }
@@ -138,7 +139,8 @@ p {
 }
 
 .section-five {
-  background-image: url(images/the-process-section-bg.png);
+  background: #F5F5F5;
+  background-image: url(images/section-five-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 22% 0;
