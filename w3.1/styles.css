@@ -141,6 +141,10 @@ h2 {
   letter-spacing: 0.14rem;
 }
 
+.section-four {
+  padding: 122px 0;
+}
+
 .section-four-img {
   float: left;
   margin-right: 136px;
@@ -148,7 +152,6 @@ h2 {
 }
 
 .section-four-heading {
-  margin-top: 122px;
   margin-bottom: 64px;
 }
 
@@ -319,5 +322,31 @@ figcaption {
 
   .section-three-heading {
     font-size: 1.5rem;
+  }
+
+  .section-four-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+
+  .section-four {
+    padding: 50px 0;
+  }
+
+  .section-four-img {
+    float: none;
+    margin: 0 0 20px;
+  }
+
+  .section-four-heading {
+    margin-bottom: 16px;
+  }
+
+  .section-five {
+    display: none;
   }
 }
