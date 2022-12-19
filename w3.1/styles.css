@@ -1,6 +1,5 @@
 body {
   font-family: Sintony, sans-serif;
-  font-size: 16px;
   color: #000;
 }
 
@@ -28,6 +27,8 @@ button {
 
 .container-narrow {
   max-width: 1030px;
+  width: 87.5%;
+  min-width: 280px;
   margin: 0 auto;
 }
 
@@ -112,6 +113,10 @@ h1 {
   margin: 0 auto;
 }
 
+.section-two {
+  padding: 158px 0 164px;
+}
+
 .section-two-img {
   margin-right: 32px;
   float: left;
@@ -122,11 +127,6 @@ h2 {
   font-weight: 400;
   line-height: 140%;
   margin: 0;
-}
-
-.heading-section-two {
-  margin-top: 158px;
-  margin-bottom: 164px;
 }
 
 .section-three {
@@ -284,8 +284,12 @@ figcaption {
     font-size: 1rem;
   }
 
-  .main-heading {
+  h1 {
     font-size: 1.625rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
   }
 
   .mobile-hidden {
@@ -298,5 +302,14 @@ figcaption {
 
   .intro {
     padding: 53px 0;
+  }
+
+  .section-two {
+    padding: 50px 0;
+  }
+
+  .section-two-img {
+    margin: 0 0 20px;
+    float: none;
   }
 }
