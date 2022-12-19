@@ -133,12 +133,12 @@ h2 {
   background-image: url(images/section-three-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 214px 0 197px;
 }
 
 .section-three-heading {
   color: #fff;
   letter-spacing: 0.14rem;
-  padding: 214px 0 197px;
 }
 
 .section-four-img {
@@ -311,5 +311,13 @@ figcaption {
   .section-two-img {
     margin: 0 0 20px;
     float: none;
+  }
+
+  .section-three {
+    padding: 30px 0;
+  }
+
+  .section-three-heading {
+    font-size: 1.5rem;
   }
 }
