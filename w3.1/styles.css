@@ -21,6 +21,8 @@ button {
 
 .container-wide {
   max-width: 1240px;
+  width: 87.5%;
+  min-width: 280px;
   margin: 0 auto;
 }
 
@@ -88,6 +90,7 @@ nav {
   background-image: url(images/intro-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 38px;
 }
 
 h1 {
@@ -102,7 +105,6 @@ h1 {
 .main-heading {
   letter-spacing: 0.105rem;
   margin: 0;
-  padding-top: 38px;
 }
 
 .intro-img {
@@ -233,6 +235,10 @@ figcaption {
   display: none;
 }
 
+.desktop-hidden {
+  display: none;
+}
+
 @media (max-width: 650px) {
   .header {
     height: 20px;
@@ -253,7 +259,6 @@ figcaption {
   .menu-mobile {
     display: block;
     float: left;
-    margin: 0 20px;
   }
 
   .menu-mobile-btn {
@@ -264,7 +269,6 @@ figcaption {
   .cart-mobile-btn {
     display: block;
     float: right;
-    margin: 0 20px;
   }
 
   .logo-btn {
@@ -280,7 +284,19 @@ figcaption {
     font-size: 1rem;
   }
 
-  h1 {
+  .main-heading {
     font-size: 1.625rem;
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+
+  .desktop-hidden {
+    display: contents;
+  }
+
+  .intro {
+    padding: 53px 0;
   }
 }
