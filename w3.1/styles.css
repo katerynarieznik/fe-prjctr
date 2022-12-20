@@ -332,6 +332,18 @@ figcaption {
   p {
     font-size: 1.25rem;
   }
+}
+
+@media (max-width: 1100px) {
+  .section-five {
+    display: none;
+  }
+}
+
+@media (max-width: 1150px) {
+  .section-five {
+    display: none;
+  }
 
   .section-four {
     padding: 50px 0;
@@ -344,9 +356,5 @@ figcaption {
 
   .section-four-heading {
     margin-bottom: 16px;
-  }
-
-  .section-five {
-    display: none;
   }
 }
