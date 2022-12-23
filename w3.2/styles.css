@@ -1,27 +1,49 @@
-/*! rename heading */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+}
+
 .heading {
   background-image: url(images/technology-section-bg.jpg);
-  padding-top: 150px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 55%;
+  padding-top: min(10.5%, 150px);
+  padding-right: min(14.6%, 210px);
+  padding-bottom: min(20%, 285px);
+  padding-left: min(14.6%, 210px);
+  /* padding: 150px 210px; */
   /* 150px = 10.5% from 1440px */
-  padding-left: 210px;
   /* 210px = 14.6% from 1440px */
-  /*? Is it possible to set up a min padding */
+}
+
+.heading-wrapper {
+  width: 100%;
 }
 
 .topic {
-  font-size: 1rem;
+  font-size: clamp(12px, 3vw, 16px);
   font-weight: 700;
   line-height: 150%;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  color: #000;
+}
+
+.topic-heading {
   color: #FFFFFF;
   opacity: 0.9;
+  margin-bottom: 30px;
 }
 
 .section-heading {
   font-weight: 700;
-  font-size: 38px;
-  /*! change px to rem */
+  font-size: clamp(24px, 3vw, 38px);
   line-height: 111%;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -35,4 +57,23 @@
 
 .points {
   display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 550px) {
+  .heading-wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .heading-wrapper {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .heading-wrapper {
+    width: min(50%, 48ch);
+  }
 }
