@@ -1,0 +1,18 @@
+
+.container {
+  max-width: 1170px;
+  min-width: 280px;
+  margin: 0 auto;
+}
+
+.intro {
+  background-image: url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  padding: 80px 100px;
+  max-width: 30%;
+}
