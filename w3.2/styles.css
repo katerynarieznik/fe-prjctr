@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+  font-size: clamp(12px, 3vw, 16px);
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+
+.heading {
+  background-image: url(images/technology-section-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 55%;
+  background-position-y: center;
+  padding-top: min(10.5%, 150px);
+  padding-right: min(14.6%, 210px);
+  padding-bottom: min(20%, 285px);
+  padding-left: min(14.6%, 210px);
+}
+
+.heading-wrapper {
+  width: 100%;
+}
+
+.topic {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.topic-heading {
+  color: #FFFFFF;
+  opacity: 0.9;
+  margin-bottom: 30px;
+}
+
+.section-heading {
+  font-weight: 700;
+  font-size: 2.375rem;
+  line-height: 111%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.points {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.point-item {
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  width: 100%;
+  flex-basis: 100%;
+  flex-grow: 1;
+}
+
+.point-item:hover {
+  color: #FFFFFF;
+  background-color: #0536FC;
+  border-right: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.point-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  gap: 10px;
+}
+
+
+.point-content {
+  margin: 50px auto 150px 50px;
+}
+
+.point-number {
+  display: block;
+  font-weight: 300;
+  font-size: 1rem;
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+.point-heading {
+  margin-bottom: 70px;
+}
+
+.point-text {
+  font-weight: 400;
+  font-size: 1rem;
+  opacity: 0.6;
+}
+
+.arrow-block {
+  background-color: #FFFFFF;
+  min-height: 100px;
+  min-width: 100px;
+  align-self: flex-end;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-icon {
+  background-image: url(images/arrow.svg);
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (min-width: 550px) {
+  .heading-wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 665px) {
+  .point-item {
+    width: 50%;
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .heading-wrapper {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .point-item {
+    width: 25%;
+    flex-basis: 25%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .heading-wrapper {
+    width: min(50%, 48ch);
+  }
+}
