@@ -12,6 +12,75 @@ body {
   color: #000000;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-wrapper {
+  float: left;
+  position: relative;
+}
+
+.logo-img {
+  height: 57px;
+  position: absolute;
+  top: 6px;
+}
+
+.logo-text {
+  display: none;
+}
+
+.navigation {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.navigation-item-mobile {
+  display: none;
+}
+
+.navigation-item {
+  display: inline;
+  position: relative;
+  margin-right: 75px;
+}
+
+.lang-wrapper {
+  float: right;
+  text-transform: uppercase;
+}
+
+.lang {
+  display: inline;
+  color: #0536FC;
+}
+
+.chevron-menu {
+  border: none;
+  background: none;
+  background-image: url("images/chevron.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 25px;
+  position: absolute;
+}
+
+.chevron-blue {
+  background-image: url("images/chevron-blue.svg");
+}
+
+/* previous homework */
+
 .heading {
   background-image: url(images/technology-section-bg.jpg);
   background-repeat: no-repeat;
@@ -131,6 +200,15 @@ body {
 @media screen and (min-width: 700px) {
   .heading-wrapper {
     width: 60%;
+  }
+}
+
+@media screen and (min-width: 1130px) {
+  .logo-text {
+    display: inline;
+    font-weight: 300;
+    opacity: 0.35;
+    margin-left: 50px;
   }
 }
 
