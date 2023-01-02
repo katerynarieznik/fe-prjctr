@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Raleway, sans-serif;
+html {
   font-size: clamp(12px, 3vw, 16px);
+  font-family: Raleway, sans-serif;
   line-height: 150%;
   letter-spacing: -0.03em;
   color: #000000;
@@ -15,6 +15,16 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0;
 }
 
 .header {
@@ -51,7 +61,7 @@ a {
   display: inline;
   position: relative;
   margin-right: 30px;
-  font-size: 1rem;
+  font-size: 1.333rem;
 }
 
 .navigation-item-desktop {
@@ -70,8 +80,6 @@ a {
 }
 
 .chevron-menu {
-  border: none;
-  background: none;
   background-image: url("images/chevron.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -85,9 +93,82 @@ a {
   background-image: url("images/chevron-blue.svg");
 }
 
-/* previous homework */
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-.heading {
+.intro-item {
+  width: 100%;
+  flex-basis: 100%;
+}
+
+.intro-text {
+  padding-top: min(10.5%, 115px);
+  padding-right: min(14.6%, 85px);
+  padding-bottom: min(20%, 185px);
+}
+
+.left-padding {
+  padding-left: min(14.6%, 210px);
+}
+
+.main-heading {
+  font-weight: 700;
+  font-size: 3.563rem;
+  line-height: 104%;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.description {
+  opacity: 0.6;
+  padding-bottom: 100px;
+}
+
+.primary-btn {
+  color: #FFFFFF;
+  background-color: #0536FC;
+  text-transform: uppercase;
+  padding: 18px 35px;
+}
+
+.intro-img {
+  min-height: 80vw;
+  background-image: url("images/intro-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.scroll-arrow {
+  width: 30px;
+  height: 30px;
+  margin: 35px;
+  background-image: url("images/arrow-down.svg");
+}
+
+.topic {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.topic-blue {
+  color: #0536FC;
+}
+
+.topic-white {
+  color: #FFFFFF;
+  opacity: 0.9;
+}
+
+.section-bg {
   background-image: url(images/technology-section-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -96,26 +177,13 @@ a {
   padding-top: min(10.5%, 150px);
   padding-right: min(14.6%, 210px);
   padding-bottom: min(20%, 285px);
-  padding-left: min(14.6%, 210px);
 }
 
 .heading-wrapper {
   width: 100%;
 }
 
-.topic {
-  font-size: 1rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.topic-heading {
-  color: #FFFFFF;
-  opacity: 0.9;
-  margin-bottom: 30px;
-}
-
-.section-heading {
+.section-heading-text {
   font-weight: 700;
   font-size: 2.375rem;
   line-height: 111%;
@@ -216,12 +284,22 @@ a {
 
   .navigation-item-desktop {
     display: inline-block;
+    font-size: 1rem;
   }
 
   .lang-wrapper {
     display: inline-block;
     position: relative;
     padding-right: 30px;
+  }
+
+  .intro-img {
+    min-height: auto;
+  }
+
+  .intro-item {
+    width: 50%;
+    flex-basis: 50%;
   }
 }
 
@@ -236,6 +314,10 @@ a {
 
   .chevron-menu {
     top: 0px;
+  }
+
+  .description {
+    width: 60%;
   }
 }
 
