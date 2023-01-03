@@ -93,23 +93,24 @@ h1 {
   background-image: url("images/chevron-blue.svg");
 }
 
-.intro {
+.two-side-section-flex {
   display: flex;
   flex-wrap: wrap;
 }
 
-.intro-item {
+.two-side-section-flex-item {
   width: 100%;
   flex-basis: 100%;
+}
+
+.mobile-order-second {
+  order: 2;
 }
 
 .intro-text {
   padding-top: min(10.5%, 115px);
   padding-right: min(14.6%, 85px);
   padding-bottom: min(20%, 185px);
-}
-
-.left-padding {
   padding-left: min(14.6%, 210px);
 }
 
@@ -123,6 +124,9 @@ h1 {
 
 .description {
   opacity: 0.6;
+}
+
+.description-intro {
   padding-bottom: 100px;
 }
 
@@ -168,7 +172,31 @@ h1 {
   opacity: 0.9;
 }
 
-.section-bg {
+.purpose-section {
+  background-color: #FF8201;
+}
+
+.purpose-logo {
+  float: right;
+  height: 70vh;
+}
+
+.purpose-container {
+  padding-top: min(10.5%, 150px);
+  padding-right: min(14.6%, 240px);
+  padding-bottom: min(20%, 235px);
+  padding-left: min(14.6%, 50px);
+}
+
+.purpose-heading {
+  margin-bottom: 70px;
+}
+
+.description-purpose {
+  margin-bottom: 100px;
+}
+
+.techno-section {
   background-image: url(images/technology-section-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -177,6 +205,7 @@ h1 {
   padding-top: min(10.5%, 150px);
   padding-right: min(14.6%, 210px);
   padding-bottom: min(20%, 285px);
+  padding-left: min(14.6%, 210px);
 }
 
 .heading-wrapper {
@@ -188,6 +217,9 @@ h1 {
   font-size: 2.375rem;
   line-height: 111%;
   text-transform: uppercase;
+}
+
+.white {
   color: #FFFFFF;
 }
 
@@ -297,9 +329,17 @@ h1 {
     min-height: auto;
   }
 
-  .intro-item {
+  .two-side-section-flex-item {
     width: 50%;
     flex-basis: 50%;
+  }
+
+  .purpose-logo {
+    height: auto;
+  }
+
+  .mobile-order-second {
+    order: unset;
   }
 }
 
@@ -316,8 +356,12 @@ h1 {
     top: 0px;
   }
 
-  .description {
+  .description-intro {
     width: 60%;
+  }
+
+  .description-purpose {
+    width: 70%;
   }
 }
 
