@@ -119,7 +119,6 @@ h1 {
   font-size: 3.563rem;
   line-height: 104%;
   text-transform: uppercase;
-  margin-bottom: 70px;
 }
 
 .description {
@@ -181,20 +180,33 @@ h1 {
   height: 70vh;
 }
 
-.purpose-container {
+.right-side-text-container {
   padding-top: min(10.5%, 150px);
   padding-right: min(14.6%, 240px);
   padding-bottom: min(20%, 235px);
   padding-left: min(14.6%, 50px);
 }
 
-.purpose-heading {
+.heading-margin {
   margin-bottom: 70px;
 }
 
 .description-purpose {
   margin-bottom: 100px;
 }
+
+.issue-section-text {
+  padding-bottom: min(20%, 70px);
+}
+
+.issue-slogan {
+  opacity: 0.35;
+  padding-top: min(10.5%, 205px);
+  padding-right: min(14.6%, 250px);
+  padding-bottom: min(20%, 300px);
+  padding-left: min(14.6%, 210px);
+}
+
 
 .techno-section {
   background-image: url(images/technology-section-bg.jpg);
@@ -347,6 +359,47 @@ h1 {
   background-position: center;
 }
 
+.stats-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stats-margins-wrapper {
+  padding-bottom: min(20%, 155px);
+  padding-left: min(14.6%, 50px);
+}
+
+.stat-flex-item {
+  width: 100%;
+  flex-basis: 100%;
+}
+
+.stat-margin {
+  margin-right: 0px;
+}
+
+.stat-icon {
+  height: 70px;
+  margin-right: 35px;
+  margin-bottom: -5px;
+  display: inline-block;
+}
+
+.stat-number {
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+
+  display: inline-block;
+}
+
+.stat-text {
+  width: 55%;
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 550px) {
   .heading-wrapper {
     width: 80%;
@@ -369,6 +422,11 @@ h1 {
 
   .participants-point-text {
     order: 3;
+  }
+
+  .stat-flex-item {
+    width: 50%;
+    flex-basis: 50%;
   }
 }
 
@@ -409,6 +467,17 @@ h1 {
 
   .mobile-order-second {
     order: unset;
+  }
+
+  .stats-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .stat-flex-item {
+    width: 30%;
+    flex-basis: 30%;
   }
 }
 
@@ -473,6 +542,17 @@ h1 {
   .right-side-square {
     top: -3px;
     right: -125px;
+  }
+
+  .stats-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .stat-flex-item {
+    width: 24%;
+    flex-basis: 24%;
   }
 }
 
