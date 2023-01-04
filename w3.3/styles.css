@@ -352,6 +352,20 @@ h1 {
   order: 6;
 }
 
+.point-square {
+  width: 30px;
+  height: 30px;
+  background-color: inherit;
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.point-one-square,
+.point-three-square,
+.point-two-square {
+  top: -64px;
+}
+
 .point-img {
   background-repeat: no-repeat;
   background-size: cover;
@@ -427,6 +441,17 @@ h1 {
   .stat-flex-item {
     width: 50%;
     flex-basis: 50%;
+  }
+
+  .point-one-square,
+  .point-three-square {
+    top: -3px;
+    left: -65px;
+  }
+
+  .point-two-square {
+    top: -3px;
+    right: -125px;
   }
 }
 
@@ -526,21 +551,15 @@ h1 {
     order: 5;
   }
 
-  .point-square {
-    width: 30px;
-    height: 30px;
-    background-color: inherit;
-    transform: rotate(45deg);
-    position: absolute;
-  }
-
-  .left-side-square {
+  .point-one-square {
     top: -3px;
     left: -65px;
   }
 
-  .right-side-square {
+  .point-two-square,
+  .point-three-square {
     top: -3px;
+    left: unset;
     right: -125px;
   }
 
