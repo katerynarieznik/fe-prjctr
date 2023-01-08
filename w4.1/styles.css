@@ -109,6 +109,8 @@ button {
   color: #CD9A3D;
 
   margin-bottom: 25px;
+
+  cursor: pointer;
 }
 
 .btn-dash {
