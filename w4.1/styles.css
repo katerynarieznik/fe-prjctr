@@ -1,11 +1,37 @@
 @font-face {
-  font-family: 'Montserrat';
-  src: url(fonts/TradeGothicLTExtended.woff);
+  font-family: 'TradeGothic';
+  src: url(fonts/TradeGothicLTExtended.woff2) format(woff2),
+    url(fonts/TradeGothicLTExtended.woff) format(woff),
+    url(fonts/TradeGothicLTExtended.otf) format(opentype);
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'Quattrocento';
-  src: url(fonts/OggLight.woff);
+  font-family: 'Ogg';
+  src: url(fonts/OggLight.woff2) format(woff2),
+    url(fonts/OggLight.woff) format(woff),
+    url(fonts/OggLight.otf) format(opentype);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ogg';
+  src: url(fonts/OggLightItalic.woff2) format(woff2),
+    url(fonts/OggLightItalic.woff) format(woff),
+    url(fonts/OggLightItalic.otf) format(opentype);
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ogg';
+  src: url(fonts/OggMediumItalic.woff2) format(woff2),
+    url(fonts/OggMediumItalic.woff) format(woff),
+    url(fonts/OggMediumItalic.otf) format(opentype);
+  font-weight: 500;
+  font-style: italic;
 }
 
 * {
@@ -19,7 +45,7 @@ h1 {
 }
 
 html {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'TradeGothic', sans-serif;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.06rem;
@@ -44,8 +70,9 @@ button {
 }
 
 .heading {
-  font-family: 'Quattrocento', serif;
+  font-family: 'Ogg', serif;
   font-weight: 300;
+  font-style: normal;
   font-size: 40px;
   line-height: 110%;
 
@@ -56,6 +83,12 @@ button {
 
 .primary-color {
   color: #71870E;
+}
+
+.emphasis {
+  font-family: 'Ogg', serif;
+  font-weight: 300;
+  font-style: italic;
 }
 
 .text {
@@ -79,7 +112,7 @@ button {
 }
 
 .btn-dash {
-  font-family: 'Quattrocento', serif;
+  font-family: 'Ogg', serif;
   font-weight: 300;
   font-size: 96px;
   line-height: 104%;
@@ -132,7 +165,13 @@ img {
     line-height: 107%;
     text-align: left;
 
-    margin: 50px 47px 100px 0;
+    margin: 50px 36px 100px 0;
+  }
+
+  .emphasis {
+    font-family: 'Ogg', serif;
+    font-weight: 500;
+    font-style: italic;
   }
 
   .topic {
