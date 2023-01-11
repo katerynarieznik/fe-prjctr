@@ -111,31 +111,66 @@ label {
   margin-bottom: 15px;
 }
 
-input::placeholder,
-select {
+input {
   font-family: 'TradeGothic';
   font-size: 16px;
   line-height: 150%;
-  color: rgba(196, 196, 196, .7);
-}
-
-input,
-select {
   width: 100%;
   padding: 5px 0;
   border-bottom: 1px solid rgba(0, 0, 0, .55);
   margin-bottom: 50px;
+  outline: none;
+  color: rgba(0, 0, 0, .85);
 }
 
-input:focus,
-select:focus {
+input::placeholder {
+  color: #D6D6D6;
+}
+
+input:focus {
   border-bottom: 2px solid #71870E;
   padding-bottom: 4px;
 }
 
-input:focus-visible,
-select:focus-visible {
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  width: 100%;
+  padding: 5px 0;
   outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: rgba(0, 0, 0, .85);
+}
+
+.custom-select {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, .55);
+  margin-bottom: 50px;
+}
+
+/* Custom arrow */
+.custom-select::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 15.5px;
+  top: 8px;
+  right: 0px;
+  background-image: url(images/select-arrow.svg);
+  cursor: pointer;
+  z-index: -1;
+}
+
+select:focus {
+  border-bottom: 1px solid #71870E;
+  padding-bottom: 4px;
+}
+
+select:invalid {
+  color: #D6D6D6;
 }
 
 .flex-container {
@@ -148,11 +183,13 @@ select:focus-visible {
   width: fit-content;
   margin-right: 20px;
   margin-bottom: 0;
+  cursor: pointer;
 }
 
 label[for="checkbox"] {
   width: fit-content;
   margin-bottom: 0;
+  cursor: pointer;
 }
 
 .btn {

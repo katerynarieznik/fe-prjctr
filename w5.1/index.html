@@ -25,13 +25,15 @@
       <label for="message">Message</label>
       <input required type="text" id="message" name="message" placeholder="Start typing here">
       <label for="project-type">Project type</label>
-      <select id="project-type" name="project-type">
-        <option hidden disabled selected> Choose </option>
-        <option value="reserve-for-personal-event">Reserve for personal event</option>
-        <option value="buy-tickets-for-a-next-concert">Buy tickets for a next concert</option>
-        <option value="reserve-from-a-venue">Reserve from a venue</option>
-        <option value="other">Other</option>
-      </select>
+      <div class="custom-select">
+        <select required id="project-type" name="project-type">
+          <option hidden selected value>Choose</option>
+          <option value="reserve-for-personal-event">Reserve for personal event</option>
+          <option value="buy-tickets-for-a-next-concert">Buy tickets for a next concert</option>
+          <option value="reserve-from-a-venue">Reserve from a venue</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
       <div class="flex-container">
         <input type="checkbox" id="checkbox" name="checkbox">
         <label for="checkbox">I agree to receive occasional newsletter with latest news and updates</label>
