@@ -58,7 +58,8 @@ select {
 }
 
 .container {
-  margin: 0px 10px 0px 10px;
+  max-width: 605px;
+  margin: 0px 10px;
 }
 
 .heading {
@@ -94,6 +95,10 @@ select {
   opacity: 0.85;
 
   padding-bottom: 1em;
+}
+
+form {
+  clear: both;
 }
 
 form:last-child {
@@ -179,7 +184,6 @@ select:invalid {
 }
 
 #checkbox {
-  color: #71870E;
   width: fit-content;
   margin-right: 20px;
   margin-bottom: 0;
@@ -192,6 +196,10 @@ label[for="checkbox"] {
   cursor: pointer;
 }
 
+label[for="checkbox"]:focus-within {
+  color: #71870E;
+}
+
 .btn {
   font-size: 16px;
   line-height: 150%;
@@ -199,16 +207,16 @@ label[for="checkbox"] {
   color: #CD9A3D;
   cursor: pointer;
 
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 .btn-dash {
   font-family: 'Ogg', serif;
   font-weight: 300;
   font-size: 96px;
-  line-height: 104%;
+  line-height: 0%;
 
-  color: #D0A049;
+  color: inherit;
 
   position: relative;
   top: 18px;
@@ -216,24 +224,44 @@ label[for="checkbox"] {
   margin-right: 30px;
 }
 
-button:focus {
-  outline: 4px solid green;
+button:focus-within,
+button:hover {
+  color: #71870E;
+  outline: none;
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 420px) {
+  .text {
+    width: 72%;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 625px) {
   .container {
-    max-width: 1170px;
     margin: 0 auto;
   }
+}
 
+@media screen and (min-width: 700px) {
   .heading {
+    position: relative;
     font-size: 60px;
     line-height: 107%;
-    text-align: left;
 
-    margin: 50px 36px 100px 0;
+    margin: 0 auto 100px auto;
   }
 
+  .text {
+    margin-bottom: 100px;
+  }
+
+  .btn {
+    float: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
   .topic {
     display: inline;
     font-size: 14px;
@@ -241,15 +269,7 @@ button:focus {
     text-transform: capitalize;
     opacity: 0.55;
 
-    position: relative;
-    top: -2em;
-  }
-
-  .text {
-    margin: 0 0 0 150px;
-  }
-
-  .btn {
-    float: none;
+    position: absolute;
+    left: -120px;
   }
 }
