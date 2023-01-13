@@ -1,0 +1,275 @@
+@font-face {
+  font-family: 'TradeGothic';
+  src: url(fonts/TradeGothicLTExtended.woff2) format(woff2),
+    url(fonts/TradeGothicLTExtended.woff) format(woff),
+    url(fonts/TradeGothicLTExtended.otf) format(opentype);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ogg';
+  src: url(fonts/OggLight.woff2) format(woff2),
+    url(fonts/OggLight.woff) format(woff),
+    url(fonts/OggLight.otf) format(opentype);
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ogg';
+  src: url(fonts/OggLightItalic.woff2) format(woff2),
+    url(fonts/OggLightItalic.woff) format(woff),
+    url(fonts/OggLightItalic.otf) format(opentype);
+  font-weight: 300;
+  font-style: italic;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+}
+
+html {
+  font-family: 'TradeGothic', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.06rem;
+  margin: 0;
+}
+
+body {
+  margin-top: 50px;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+input,
+select {
+  border: none;
+}
+
+.container {
+  max-width: 605px;
+  margin: 0px 10px;
+}
+
+.heading {
+  font-family: 'Ogg', serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 110%;
+
+  text-align: center;
+
+  margin-bottom: 25px;
+}
+
+.topic {
+  display: none;
+}
+
+.italic {
+  font-family: 'Ogg', serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.primary-color {
+  color: #71870E;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 175%;
+
+  opacity: 0.85;
+
+  padding-bottom: 1em;
+}
+
+form {
+  clear: both;
+}
+
+form:last-child {
+  text-align: center;
+}
+
+label {
+  font-family: 'Ogg';
+  font-weight: 300;
+  line-height: 150%;
+  font-size: 1rem;
+  text-align: left;
+
+  display: block;
+  margin-bottom: 15px;
+}
+
+input {
+  font-family: 'TradeGothic';
+  font-size: 16px;
+  line-height: 150%;
+  width: 100%;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .55);
+  margin-bottom: 50px;
+  outline: none;
+  color: rgba(0, 0, 0, .85);
+}
+
+input::placeholder {
+  color: #D6D6D6;
+}
+
+input:focus {
+  border-bottom: 2px solid #71870E;
+  padding-bottom: 4px;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  width: 100%;
+  padding: 5px 0;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: rgba(0, 0, 0, .85);
+}
+
+.custom-select {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, .55);
+  margin-bottom: 50px;
+}
+
+/* Custom arrow */
+.custom-select::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 15.5px;
+  top: 8px;
+  right: 0px;
+  background-image: url(images/select-arrow.svg);
+  cursor: pointer;
+  z-index: -1;
+}
+
+select:focus {
+  border-bottom: 1px solid #71870E;
+  padding-bottom: 4px;
+}
+
+select:invalid {
+  color: #D6D6D6;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+#checkbox {
+  width: fit-content;
+  margin-right: 20px;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+label[for="checkbox"] {
+  width: fit-content;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+label[for="checkbox"]:focus-within {
+  color: #71870E;
+}
+
+.btn {
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #CD9A3D;
+  cursor: pointer;
+
+  margin: 40px auto;
+}
+
+.btn-dash {
+  font-family: 'Ogg', serif;
+  font-weight: 300;
+  font-size: 96px;
+  line-height: 0%;
+
+  color: inherit;
+
+  position: relative;
+  top: 18px;
+
+  margin-right: 30px;
+}
+
+button:focus-within,
+button:hover {
+  color: #71870E;
+  outline: none;
+}
+
+@media screen and (min-width: 420px) {
+  .text {
+    width: 72%;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 625px) {
+  .container {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .heading {
+    position: relative;
+    font-size: 60px;
+    line-height: 107%;
+
+    margin: 0 auto 100px auto;
+  }
+
+  .text {
+    margin-bottom: 100px;
+  }
+
+  .btn {
+    float: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .topic {
+    display: inline;
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: capitalize;
+    opacity: 0.55;
+
+    position: absolute;
+    left: -120px;
+  }
+}
