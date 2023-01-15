@@ -54,3 +54,19 @@
 .arrow {}
 
 .arrow_hover {}
+
+
+.form-input {}
+
+.form-input__label {}
+
+.form-input__label::placeholder {}
+
+.form-input__input {}
+
+.form-input__input_textarea {}
+
+
+.button {}
+
+.button_primary {}

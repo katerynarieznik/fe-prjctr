@@ -114,22 +114,26 @@
   </section>
   <section>
     <form action="">
-      <div>
-        <label> ім’я
-          <input type="text" placeholder="Напишіть ваше ім’я">
+      <div class="form-input">
+        <label class="heading-third form-input__label"> ім’я
+          <input class="form-input__input" type="text" id="name" name="name" placeholder="Напишіть ваше ім’я">
+        </label>
+      </div>
+      <div class="form-input">
+        <label class="heading-third form-input__label"> Email
+          <input class="form-input__input" type="email" id="email" name="email"
+            placeholder="Напишіть вашу електронну адресу">
+        </label>
+      </div>
+      <div class="form-input">
+        <label class="heading-third form-input__label"> Повідомлення
+          <textarea class="form-input__input form-input__input_textarea" id="message" name="message"
+            placeholder="Напишіть ваше повідомлення"></textarea>
         </label>
       </div>
       <div>
-        <label> Email
-          <input type="text" placeholder="Напишіть вашу електронну адресу">
-        </label>
+        <input class="button button_primary" type="submit" value="відправити" />
       </div>
-      <div>
-        <label> Повідомлення
-          <textarea type="text" placeholder="Напишіть ваше повідомлення">
-        </label>
-      </div>
-      <button type="submit">відправити</button>
     </form>
   </section>
 </body>
