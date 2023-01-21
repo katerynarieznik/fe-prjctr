@@ -155,6 +155,11 @@ html {
   opacity: 0.35;
 }
 
+.frequency {
+  display: flex;
+  gap: 30px;
+}
+
 
 @media (min-width: 800px) {
   .grid {

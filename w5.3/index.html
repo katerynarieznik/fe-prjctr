@@ -55,28 +55,23 @@
             <input class="amount__input" type="number" min="0" name="payment-amount" placeholder="Інша сума">
           </div>
         </div>
-
-        <fieldset class="fieldset">
-          <div>
-            <label>
-              <input type="radio" name="frequency" value="monthly">
-              Щомісячно</label>
+        <div class="frequency">
+          <div class="radio-regular">
+            <input class="radio-regular__input" type="radio" id="monthly" name="frequency" value="monthly">
+            <label class="radio-regular__label" for="monthly">Щомісячно</label>
           </div>
-          <div>
-            <label>
-              <input type="radio" name="frequency" value="one-time">
-              Одноразово</label>
+          <div class="radio-regular">
+            <input class="radio-regular__input" type="radio" id="once" name="frequency" value="one-time">
+            <label class="radio-regular__label" for="once">Одноразово</label>
           </div>
-        </fieldset>
-        <div>
-          <label> ім’я
-            <input type="text" name="name" placeholder="Напишіть ваше ім’я">
-          </label>
         </div>
         <div>
-          <label> Email
-            <input type="email" name="email" placeholder="Напишіть вашу електронну адресу">
-          </label>
+          <label for="name">ім’я</label>
+          <input type="text" id="name" name="name" placeholder="Напишіть ваше ім’я">
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="email" id="email" name="email" placeholder="Напишіть вашу електронну адресу">
         </div>
         <div>
           <label>
