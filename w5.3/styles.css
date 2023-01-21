@@ -40,10 +40,131 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #0536FC;
+  accent-color: var(--primary-color);
+}
+
+:focus-visible {
+  outline: none;
+}
+
 html {
-  font-size: clamp(12px, 3vw, 16px);
   font-family: 'Basis Grotesque Pro', sans-serif;
+  font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.03em;
   color: #000000;
+}
+
+.section-heading {
+  padding: 20px 20px 40px;
+}
+
+.section-heading__label {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+
+.section-heading__main {
+  font-weight: 700;
+  font-size: 2.375rem;
+  line-height: 111%;
+  text-transform: uppercase;
+}
+
+.payment-select {
+  padding: 0 20px 20px;
+}
+
+.payment-select__title {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.radio-regular {
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.radio-regular__input {
+  margin-right: 15px;
+}
+
+.radio-regular__label {
+  font-weight: 400;
+  font-size: 1rem;
+  opacity: 0.6;
+}
+
+.payment-card {
+  padding: 0 20px 20px;
+}
+
+.payment-card__title {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.amount__radio-input {
+  position: absolute;
+  opacity: 0;
+}
+
+.amount {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.amount__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: none;
+}
+
+.amount__radio-input:checked+.amount__button {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.amount__custom {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.amount__input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 10px 0 10px 35px;
+}
+
+.amount__input::placeholder {
+  font-weight: 400;
+  font-size: 1rem;
+  opacity: 0.35;
+}
+
+
+@media (min-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-heading {
+    grid-column: 1 / 3;
+  }
+
+  .container-full {}
 }

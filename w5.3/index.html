@@ -12,31 +12,87 @@
 <body>
   <section class="grid">
     <div class="section-heading">
-      <h3 class="heading-third heading-third_blue">інвестиції</h3>
-      <h2 class="heading-second">зробити
+      <h3 class="section-heading__label">інвестиції</h3>
+      <h2 class="section-heading__main">зробити
         — інвестиції у програму</h2>
     </div>
-    <div>
-      <h3 class="heading-third">виберіть спосіб оплати</h3>
+    <div class="payment-select">
+      <div class="payment-select__title">виберіть спосіб оплати</div>
+      <div class="radio-regular">
+        <input class="radio-regular__input" type="radio" id="card" name="payment-type" value="card">
+        <label class="radio-regular__label" for="card">Банківська карта</label>
+      </div>
+      <div class="radio-regular">
+        <input class="radio-regular__input" type="radio" id="paypal" name="payment-type" value="paypal">
+        <label class="radio-regular__label" for="paypal">PayPal</label>
+      </div>
+      <div class="radio-regular">
+        <input class="radio-regular__input" type="radio" id="receipt" name="payment-type" value="receipt">
+        <label class="radio-regular__label" for="receipt">Банківська платіжна квитанція</label>
+      </div>
     </div>
-    <div>
-      <form action="">
+    <div class="payment-card">
+      <h3 class="payment-card__title">банківська карта</h3>
+      <form action="" method="post">
+        <div class="amount">
+          <div>
+            <input class="amount__radio-input" type="radio" id="amount-50000" name="payment-amount" value="50000">
+            <label class="amount__button" for="amount-50000">50 000</label>
+          </div>
+          <div>
+            <input class="amount__radio-input" type="radio" id="amount-30000" name="payment-amount" value="30000">
+            <label class="amount__button" for="amount-30000">30 000</label>
+          </div>
+          <div>
+            <input class="amount__radio-input" type="radio" id="amount-10000" name="payment-amount" value="10000">
+            <label class="amount__button" for="amount-10000">10 000</label>
+          </div>
+          <div>
+            <input class="amount__radio-input" type="radio" id="amount-1000" name="payment-amount" value="1000">
+            <label class="amount__button" for="amount-1000">1 000</label>
+          </div>
+          <div class="amount__custom">
+            <input class="amount__input" type="number" min="0" name="payment-amount" placeholder="Інша сума">
+          </div>
+        </div>
+
+        <fieldset class="fieldset">
+          <div>
+            <label>
+              <input type="radio" name="frequency" value="monthly">
+              Щомісячно</label>
+          </div>
+          <div>
+            <label>
+              <input type="radio" name="frequency" value="one-time">
+              Одноразово</label>
+          </div>
+        </fieldset>
         <div>
-          <label for=""> Банківська карта
-            <input type="radio">
+          <label> ім’я
+            <input type="text" name="name" placeholder="Напишіть ваше ім’я">
           </label>
         </div>
         <div>
-          <label for=""> PayPal
-            <input type="radio">
+          <label> Email
+            <input type="email" name="email" placeholder="Напишіть вашу електронну адресу">
           </label>
         </div>
         <div>
-          <label for=""> Банківська платіжна квитанція
-            <input type="radio">
+          <label>
+            <input type="checkbox" name="terms">
+            Я приймаю <a href="">Договір оферти</a>
           </label>
         </div>
+        <div>
+          <label>
+            <input type="checkbox" name="privacy">
+            Я приймаю <a href="">Угоду про використання персональних даних</a>
+          </label>
+        </div>
+        <input type="submit" value="відправити">
       </form>
+    </div>
     </div>
   </section>
 </body>
