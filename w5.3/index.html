@@ -65,27 +65,28 @@
             <label class="radio-regular__label" for="once">Одноразово</label>
           </div>
         </div>
-        <div>
-          <label for="name">ім’я</label>
-          <input type="text" id="name" name="name" placeholder="Напишіть ваше ім’я">
+        <div class="text-input">
+          <label class="text-input__label" for="name">ім’я</label>
+          <input class="text-input__input" type="text" id="name" name="name" placeholder="Напишіть ваше ім'я">
         </div>
-        <div>
-          <label>Email</label>
-          <input type="email" id="email" name="email" placeholder="Напишіть вашу електронну адресу">
+        <div class="text-input">
+          <label class="text-input__label" for="email">Email</label>
+          <input class="text-input__input" type="email" id="email" name="email"
+            placeholder="Напишіть вашу електронну адресу">
         </div>
-        <div>
-          <label>
-            <input type="checkbox" name="terms">
-            Я приймаю <a href="">Договір оферти</a>
-          </label>
+        <div class="terms">
+          <div class="checkbox">
+            <input class="checkbox__input" type="checkbox" id="terms" name="terms">
+            <label class="checkbox__label" for="terms">Я приймаю <a class="link" href="">Договір оферти</a></label>
+          </div>
+          <div class="checkbox">
+            <input class="checkbox__input" type="checkbox" id="privacy" name="privacy">
+            <label class="checkbox__label" for="privacy">Я приймаю <a class="link" href="">Угоду про використання
+                персональних
+                даних</a></label>
+          </div>
         </div>
-        <div>
-          <label>
-            <input type="checkbox" name="privacy">
-            Я приймаю <a href="">Угоду про використання персональних даних</a>
-          </label>
-        </div>
-        <input type="submit" value="відправити">
+        <input class="button" type="submit" value="відправити">
       </form>
     </div>
     </div>

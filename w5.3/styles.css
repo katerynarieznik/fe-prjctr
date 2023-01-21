@@ -158,8 +158,73 @@ html {
 .frequency {
   display: flex;
   gap: 30px;
+  margin-bottom: 50px;
 }
 
+.text-input {
+  margin-bottom: 30px;
+}
+
+.text-input__label {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  display: block;
+  margin-bottom: 15px;
+}
+
+.text-input__input {
+  width: 100%;
+  padding: 5px 0;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.text-input__input::placeholder {
+  font-weight: 300;
+  font-size: 1rem;
+  opacity: 0.35;
+}
+
+.terms {
+  margin-bottom: 35px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 15px;
+}
+
+.checkbox__input {
+  margin-right: 15px;
+}
+
+.checkbox__label {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #666666;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.button {
+  border: none;
+  background-color: var(--primary-color);
+
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+
+  height: 55px;
+  width: 100%;
+  text-align: center;
+}
 
 @media (min-width: 800px) {
   .grid {
