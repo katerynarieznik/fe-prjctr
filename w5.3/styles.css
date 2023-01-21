@@ -57,6 +57,11 @@ html {
   color: #000000;
 }
 
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 .section-heading {
   padding: 20px 20px 40px;
 }
@@ -76,15 +81,17 @@ html {
   text-transform: uppercase;
 }
 
-.payment-select {
-  padding: 0 20px 20px;
-}
-
-.payment-select__title {
+.payment-title {
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  padding: 0 20px 20px;
+}
+
+.payment-select {
+  padding: 0 20px 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .radio-regular {
@@ -137,6 +144,7 @@ html {
   background-color: var(--primary-color);
   color: #fff;
 }
+
 
 .amount__custom {
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -226,15 +234,63 @@ html {
   text-align: center;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1270px;
+    margin: 0 auto;
+  }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .section-heading {
-    grid-column: 1 / 3;
+  .payment-title {
+    grid-column: 1 / 2;
   }
 
-  .container-full {}
+  .payment-select {
+    grid-column: 2 / 3;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .payment-card {
+    grid-column: 2 / 3;
+  }
+
+  .section-heading {
+    padding-left: 125px;
+  }
+
+  .payment-title {
+    padding-left: 125px;
+  }
+
+  .amount {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .amount__defined {
+    width: 160px;
+    flex-basis: 25%;
+  }
+
+  .amount__button {
+    border-right: none;
+  }
+
+  .amount__defined:nth-last-child(2) .amount__button {
+    border-right: 1px solid rgba(0, 0, 0, 0.15);
+  }
+
+  .amount__custom {
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .button {
+    width: 213px;
+  }
 }
