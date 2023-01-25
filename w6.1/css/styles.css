@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Basis Grotesque Pro";
+  src: url(fonts/BasisGrotesquePro-Light.woff2) format(woff2);
+  src: url(fonts/BasisGrotesquePro-Light.woff) format(woff);
+  src: url(fonts/BasisGrotesquePro-Light.ttf) format(truetype);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Basis Grotesque Pro";
+  src: url(fonts/BasisGrotesquePro-Regular.woff2) format(woff2);
+  src: url(fonts/BasisGrotesquePro-Regular.woff) format(woff);
+  src: url(fonts/BasisGrotesquePro-Regular.ttf) format(truetype);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Basis Grotesque Pro";
+  src: url(fonts/BasisGrotesquePro-Medium.woff2) format(woff2);
+  src: url(fonts/BasisGrotesquePro-Medium.woff) format(woff);
+  src: url(fonts/BasisGrotesquePro-Medium.ttf) format(truetype);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Basis Grotesque Pro";
+  src: url(fonts/BasisGrotesquePro-Bold.woff2) format(woff2);
+  src: url(fonts/BasisGrotesquePro-Bold.woff) format(woff);
+  src: url(fonts/BasisGrotesquePro-Bold.ttf) format(truetype);
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Basis Grotesque Pro", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+
+@media (min-width: 1200px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1270px;
+  }
+}
+
+.section-heading {
+  padding: 20px 20px 40px;
+}
+@media (min-width: 1200px) {
+  .section-heading {
+    padding-left: 125px;
+    padding-bottom: 0;
+  }
+}
+
+.section-heading__label {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0536FC;
+  margin-bottom: 30px;
+}
+
+.section-heading__main {
+  font-weight: 700;
+  font-size: 2.375rem;
+  line-height: 111%;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.section-heading__description {
+  font-size: 1rem;
+  font-weight: 300;
+  opacity: 0.35;
+}
+
+.questions {
+  padding: 0 20px 40px;
+}
+@media (min-width: 1200px) {
+  .questions {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+}
+
+.questions__detail {
+  padding: 30px 0 70px;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+.questions__detail .questions__summary:after {
+  content: " ";
+  width: 30px;
+  height: 15px;
+  background-image: url("../images/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.questions__detail[open] .questions__summary:after {
+  content: " ";
+  width: 30px;
+  height: 15px;
+  background-image: url("../images/minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.questions__summary {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.questions__content {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.6;
+}
