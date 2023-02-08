@@ -1,0 +1,162 @@
+:root {
+  --primary-blue: #0536FC;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0;
+}
+
+.header {
+  padding: 30px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrapper {
+  position: relative;
+}
+
+.logo-img {
+  height: 57px;
+  position: absolute;
+  top: 4px;
+}
+
+.logo-text {
+  font-weight: 300;
+  opacity: 0.35;
+
+  margin-left: 50px;
+}
+
+.navigation {
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.navigation-item {
+  display: inline;
+  margin-right: 30px;
+  border-color: #000000;
+}
+
+.navigation-item__blue {
+  color: var(--primary-blue);
+  border-color: var(--primary-blue);
+}
+
+.navigation-item::after {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-right: 0.5px solid;
+  border-bottom: 0.5px solid;
+  transform: rotate(45deg);
+  margin-bottom: 4px;
+  margin-left: 11px;
+}
+
+.heading-group {
+  padding: 145px 35px 100px 210px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.heading-group__topic {
+  color: var(--primary-blue);
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.heading-group__main {
+  font-weight: 700;
+  font-size: 57px;
+  line-height: 104%;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+.heading-group__description {
+  opacity: 0.6;
+}
+
+.scroll-btn {
+  background-image: url(images/arrow-down.svg);
+  width: 30px;
+  height: 30px;
+}
+
+.bounce {
+  animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 100px;
+}
+
+.tabs__tab {
+  text-transform: uppercase;
+  color: var(--primary-blue);
+  display: flex;
+  justify-content: center;
+  padding: 33px 0;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-right-color: transparent;
+}
+
+.tabs__tab:hover {
+  border-color: transparent;
+  color: white;
+  background-color: var(--primary-blue);
+  transition: all 0.5s;
+}
