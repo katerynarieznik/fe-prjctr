@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            customblue: '#0536FC',
+          },
+          fontFamily: {
+            sans: ['Raleway', 'sans-serif']
+          },
+          backgroundImage: {
+            'img': "url('./images/bg-img.jpg')",
+          }
+        }
+      }
+    }
+  </script>
+  <title>Програма Навчай — для України</title>
+</head>
+
+<body>
+  <div class="pt-32 pb-24 px-52">
+    <h3 class="uppercase text-base text-customblue font-bold mb-8">програма</h3>
+    <h1 class="uppercase text-6xl font-bold mb-20 w-2/5">Навчай — для України</h1>
+    <p class="text-black/[.6]">Освітньо-громадська організація.</p>
+  </div>
+  <div>
+    <div class="grid grid-cols-2">
+      <div
+        class="flex justify-center py-8 border border-solid border-black/[.15] hover:border-transparent uppercase text-customblue hover:text-white hover:bg-customblue ">
+        про нас
+      </div>
+      <div
+        class="flex justify-center py-8 border border-solid border-black/[.15] border-x-transparent hover:border-transparent uppercase text-customblue hover:text-white hover:bg-customblue">
+        наша
+        діяльність
+      </div>
+    </div>
+    <div class="h-[1110px] bg-img bg-cover bg-center flex flex-wrap justify-end content-end">
+      <div class="bg-white p-32 basis-1/2">
+        <h3 class="uppercase text-base text-customblue font-bold mb-8">хто ми</h3>
+        <h2 class="uppercase text-4xl font-bold mb-20">амбітня команда — однодумців</h2>
+        <p class="text-black/[.6] mb-24">Команда спеціалістів, що 4 роки успішно займається освітою дітей у
+          малорозвинутих
+          селах та містах України</p>
+        <button
+          class="py-4 px-9 bg-customblue uppercase text-white hover:bg-white border border-transparent hover:border-black/[.15] hover:text-customblue">стати
+          учасником</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
